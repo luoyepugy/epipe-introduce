@@ -1,0 +1,43 @@
+
+@import 'custom/custom.scss';
+@import 'custom/mixin.scss';
+
+// 标题
+.title {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 20px;
+}
+// 内容
+.content {
+  margin: 0 auto;
+  @include position-center(1024px);
+}
+.purchaser,
+.vendor{
+  @include size(400px,700px);
+  display: inline-block;
+  overflow: hidden;
+  img {
+    @include size(400px,700px);
+  }
+}
+// 采购方
+.purchaser {
+}
+// 供应商
+.vendor {
+  float: right;
+}
+
+
+
+// 颜色
+@include color('gray_light', '#bbb');
+@include color('gray_mid', '#343434');
+@include color('green', '#24ccab');
+@include color('orange', '#ff6c21');
+@include color('blue', '#1baee4');
+@include color('red');
+@include color('white');
+@include color('black');
