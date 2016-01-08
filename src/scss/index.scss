@@ -2,11 +2,20 @@
 @import 'custom/custom.scss';
 @import 'custom/mixin.scss';
 
+body {
+  background: url(../images/bg.png) repeat;
+}
+// 头部
+.header { 
+  background: url(../images/header-bg.jpg) repeat #000;
+  @include inside-center(100%, 65px);
+}
 // 标题
 .title {
   text-align: center;
-  margin: 20px auto;
-  font-size: 24px;
+  margin: 25px auto;
+  font-size: 28px;
+  color: $main-orange;
 }
 // 内容
 .content {
@@ -14,20 +23,21 @@
   @include position-center(1024px);
 }
 .purchaser,
-.vendor{
-  @include size(400px,700px);
+.vendor{ 
   display: inline-block;
   overflow: hidden;
   img {
-    @include size(400px,700px);
+    @include size(410px,700px);
   }
 }
 // 采购方
 .purchaser {
+  margin-right: 150px;
+  @include size(410px,700px);
 }
 // 供应商
 .vendor {
-  float: right;
+  @include size(410px,700px);
 }
 
 
