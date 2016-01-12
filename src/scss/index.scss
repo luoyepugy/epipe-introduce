@@ -25,15 +25,16 @@ body {
 }
 .purchaser,
 .vendor{ 
+  margin: 95px 0 0 30px;
   display: inline-block;
   overflow: hidden;
   img {
-    @include size(410px,700px);
+    @include size(375px,628px);
   }
 }
 // 采购方
 .purchaser {
-  margin-right: 150px;
+  margin-right: 140px;
   @include size(410px,700px);
 }
 // 供应商
@@ -41,7 +42,15 @@ body {
   @include size(410px,700px);
 }
 
-
+// 手机外壳
+.iphone-wrap {
+  @include position(absolute, up);
+  @include size(430px, 850px);
+}
+.iphone-wrap2 {
+  @include position-basic(absolute, right, 10px, top, 0);
+  @include size(430px, 850px);
+}
 
 // 颜色
 @include color('gray_light', '#bbb');
